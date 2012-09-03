@@ -21,11 +21,12 @@ bool isDebugMode() {
 }
 
 int main() {
-    DigitalPin pin("P8_3");
+    //DigitalPin pin("P8_3");
     
-    pin.on();
-    sleep(3);
-    pin.off();
+    //pin.on();
+    //sleep(3);
+    //pin.off();
+    cout << "hello world" << endl;
 
     return 0;
 }
