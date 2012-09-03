@@ -21,23 +21,11 @@ bool isDebugMode() {
 }
 
 int main() {
-    const char* pingPin = "P9_15";
-
-    Ping ping(pingPin);
-
-
-    while(true) {
-
-
-        cout << "cm = " << ping.getCm() <<endl;
-        usleep(5000);
-    }
-
-
-
-
-
-
+    DigitalPin pin("P8_3");
+    
+    pin.on();
+    sleep(3);
+    pin.off();
 
     return 0;
 }
