@@ -1,13 +1,5 @@
 #include "bbio.h"
 #include "gperf_pinMap.h"
-void pinDemo() {
-    char buf[BUFSIZ];
-    while (gets (buf)) {
-       const struct pin *p = getPin(buf, strlen (buf));
-       if(p) printf ("ID = %s\ngpio = %i\nmux = %s\neeprom = %i\npwm = %s\n", p->ID, p->gpio, p->mux, p->eeprom, p->pwm);
-       else printf("nope\n");
-    }
-}
 
 int checkPin(const struct pin *p, int mode) {
     if(!p) return 0;
