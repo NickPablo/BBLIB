@@ -5,5 +5,5 @@ obj/
 *.o
 *.a
 */build/
-html/
-latex/
+*/html/
+*/latex/
