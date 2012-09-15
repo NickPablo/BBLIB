@@ -21,7 +21,7 @@ public:
     void attach(const char *pin) {
         this->pin = pin;
         exportGpio(pin);
-        muxPin(pin, 0x37);
+        //muxPin(pin, 0x37);
         digitalMode(pin, OUTPUT);
         mode = OUTPUT;
     }
@@ -32,7 +32,7 @@ public:
             return;
         }
         if(mode == INPUT) {
-            muxPin(pin, 0x37);
+            //muxPin(pin, 0x37);
             digitalMode(pin, OUTPUT);
             mode = OUTPUT;
         }
@@ -46,7 +46,7 @@ public:
             return;
         }
         if(mode == INPUT) {
-            muxPin(pin, 0x37);
+            //muxPin(pin, 0x37);
             digitalMode(pin, OUTPUT);
             mode = OUTPUT;
         }
@@ -60,7 +60,7 @@ public:
             return;
         }
         if(mode == INPUT) {
-            muxPin(pin, 0x37);
+            //muxPin(pin, 0x37);
             digitalMode(pin, OUTPUT);
             mode = OUTPUT;
         }
@@ -74,7 +74,7 @@ public:
             return 0;
         }
         if(mode == OUTPUT){
-            muxPin(pin, 0x27);
+            //muxPin(pin, 0x27);
             digitalMode(pin, INPUT);
             mode = OUTPUT;
         }
@@ -88,7 +88,7 @@ public:
             return 0;
         }
         if(this->mode == OUTPUT){
-            muxPin(pin, 0x27);
+            //muxPin(pin, 0x27);
             digitalMode(pin, INPUT);
             this->mode = INPUT;
         }
